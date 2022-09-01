@@ -1,11 +1,11 @@
 
 
 function DiceRolling() {
-  var Images=["images/dice1.png", "images/dice2.png","images/dice3.png","images/dice4.png","images/dice5.png","images/dice6.png"];
+  var ImagesArray=["Images/dice1.png", "Images/dice2.png","Images/dice3.png","Images/dice4.png","Images/dice5.png","Images/dice6.png"];
   var randomnumber1= Math.floor(Math.random()* 6);
   var randomnumber2= Math.floor(Math.random()* 6);
-  document.querySelector('.img1').src = Images[randomnumber1];
-  document.querySelector('.img2').src=Images[randomnumber2];
+  document.querySelector('.img1').src = ImagesArray[randomnumber1];
+  document.querySelector('.img2').src=ImagesArray[randomnumber2];
 
   if (randomnumber1===randomnumber2){
     document.querySelector('h1').innerHTML="Draw";
